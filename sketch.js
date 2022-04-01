@@ -41,7 +41,8 @@ function windowResized() {
 
 
 function draw() {
-  background(0);
+  // background(0);
+  background(255, 0, 200);
 
   // get volume reading from the p5.Amplitude analyzer
   let level = analyzer.getLevel();
