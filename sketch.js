@@ -20,7 +20,7 @@ function preload() {
 
 function setup() {
   
-  createCanvas(710, 400);
+  createCanvas(1920, 1080);
   
  // fullscreen();  // Geht nur per UserInteraction, nix startup ...?
   
