@@ -20,7 +20,8 @@ function preload() {
 
 function setup() {
   
-  createCanvas(1920, 1080);
+  var cnv = createCanvas(windowWidth, windowHeight);
+  cnv.style('display', 'block');
   
  // fullscreen();  // Geht nur per UserInteraction, nix startup ...?
   
@@ -32,6 +33,12 @@ function setup() {
 
   analyzer = new p5.Amplitude();
 }
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 
 function draw() {
   background(0);
